@@ -12,5 +12,11 @@ public class Thermtest
 		thermA.setCelsius(30.0);
 		System.out.println("Temp. of Thermometer A is " + thermA.getCelsius() );
 		
+		thermometer thermB = new thermometer(10.0);
+		
+		double tempB = thermB.getCelsius();
+		
+		System.out.println("Temp. of Thermometer B is " + tempB);
+		
 	} // end main
 } // end class ThermTest
