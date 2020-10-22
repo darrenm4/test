@@ -4,6 +4,8 @@ public class HotelDriver {
 
 	public static void main(String[] args) {
 		
+		HotelRoom[] rooms = new HotelRoom[3];
+		
 		HotelRoom roomA = new HotelRoom();
 		
 		roomA.setRoomNumber(200);
@@ -17,12 +19,15 @@ public class HotelDriver {
 		roomB.setVacant(0);
 		roomB.setRate(80);
 		
-		System.out.println("room " + roomA.toString());
-		
-		System.out.println("room " + roomB.toString());
-		
 		HotelRoom roomC = new HotelRoom(202, "single",0,90);
-
+		
+		rooms[0]= roomA;
+		rooms[1]= roomB;
+		rooms[2]= roomC;
+		
+		for(HotelRoom h: rooms)
+			if(h != null)
+			System.out.println("Room: " + h.toString());
 	}
 
 }
