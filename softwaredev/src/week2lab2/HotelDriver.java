@@ -11,9 +11,15 @@ public class HotelDriver {
 		
 		HotelRoom roomB = new HotelRoom(201,"double");
 		
-		System.out.println("RoomNo.: " + roomA.getRoomNumber() + " RoomType " + roomA.getRoomType());
+		roomA.setVacant(1);
+		roomA.setRate(100);
 		
-		System.out.println("RoomNo.: " + roomB.getRoomNumber() + " RoomType " + roomB.getRoomType());
+		roomB.setVacant(0);
+		roomB.setRate(80);
+		
+		System.out.println("room " + roomA.toString());
+		
+		System.out.println("room " + roomB.toString());
 
 	}
 

@@ -6,12 +6,16 @@ public class HotelRoom {
 	//Variables//
 	private int roomNumber;
 	private String roomType;
+	private int vacant;
+	private double rate;
 	
 	
   ///Constructors///
 	public HotelRoom() {
 		setRoomNumber(0);
 		setRoomType("");
+		setVacant(0);
+		setRate(0);
 	}
 
 	public HotelRoom(int roomNumber, String roomType) {
@@ -34,6 +38,28 @@ public class HotelRoom {
 		this.roomType = roomType;
 	}
 	
-   //ToString//	
+   public int getVacant() {
+		return vacant;
+	}
 
+	public void setVacant(int vacant) {
+		this.vacant = vacant;
+	}
+
+	public double getRate() {
+		return rate;
+	}
+
+	public void setRate(double rate) {
+		this.rate = rate;
+	}
+
+	//ToString//	
+	@Override
+	public String toString() {
+		return "HotelRoom [roomNumber=" + roomNumber + ", roomType=" + roomType + ", vacant=" + vacant + ", rate="
+				+ rate + "]";
+	}
+	
+	
 }
