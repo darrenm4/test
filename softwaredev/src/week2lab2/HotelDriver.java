@@ -13,13 +13,13 @@ public class HotelDriver {
 		
 		HotelRoom roomB = new HotelRoom(201,"double");
 		
-		roomA.setVacant(1);
+		roomA.setVacant(true);
 		roomA.setRate(100);
 		
-		roomB.setVacant(0);
+		roomB.setVacant(false);
 		roomB.setRate(80);
 		
-		HotelRoom roomC = new HotelRoom(202, "single",0,90);
+		HotelRoom roomC = new HotelRoom(202, "single",false,90);
 		
 		rooms[0]= roomA;
 		rooms[1]= roomB;
@@ -28,6 +28,8 @@ public class HotelDriver {
 		for(HotelRoom h: rooms)
 			if(h != null)
 			System.out.println("Room: " + h.toString());
+	
+	rooms[1].isOccupied();
+	System.out.println("Room: " + rooms[1].toString());
 	}
-
 }
