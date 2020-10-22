@@ -20,6 +20,8 @@ public class HotelDriver {
 		System.out.println("room " + roomA.toString());
 		
 		System.out.println("room " + roomB.toString());
+		
+		HotelRoom roomC = new HotelRoom(202, "single",0,90);
 
 	}
 

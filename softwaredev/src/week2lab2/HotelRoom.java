@@ -22,7 +22,14 @@ public class HotelRoom {
 		setRoomNumber (roomNumber);
 		setRoomType (roomType);
 	}
-
+	
+	  public HotelRoom(int roomNumber, String roomType, int vacant, double rate) {
+			super();
+			setRoomNumber(roomNumber);
+			setRoomType(roomType);
+			setVacant(vacant);
+			setRate(rate);
+		}
 
 ///Getters and Setters///	
 	public int getRoomNumber() {
@@ -38,7 +45,8 @@ public class HotelRoom {
 		this.roomType = roomType;
 	}
 	
-   public int getVacant() {
+
+public int getVacant() {
 		return vacant;
 	}
 
