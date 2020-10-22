@@ -13,7 +13,14 @@ public class HotelRoom {
 		setRoomNumber(0);
 		setRoomType("");
 	}
-  ///Getters and Setters///	
+
+	public HotelRoom(int roomNumber, String roomType) {
+		setRoomNumber (roomNumber);
+		setRoomType (roomType);
+	}
+
+
+///Getters and Setters///	
 	public int getRoomNumber() {
 		return roomNumber;
 	}
