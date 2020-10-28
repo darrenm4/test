@@ -63,9 +63,9 @@ public class rectangle {
 		System.out.println(w);
 		
 		for(int j=0;j<length-2;j++) {
-			System.out.println("*");
+			System.out.print("*");
 			for(int x=0;x<width-2;x++) {
-				System.out.println(" ");
+				System.out.print(" ");
 			}
 			System.out.println("*");
 		}
