@@ -43,4 +43,13 @@ public class rectangle {
 		return "rectangle [length=" + length + ", width=" + width + "]";
 	}
 	
+	
+	//Miscellaneous methods//
+	public float getArea() {
+		return length* width;
+	}
+	
+	public float getPerimeter() {
+		return (length + width)*2;
+	}
 }
