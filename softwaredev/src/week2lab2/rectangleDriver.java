@@ -17,6 +17,10 @@ public class rectangleDriver {
 		rect.setWidth(-20.0f);
 		
 		System.out.println(rect);
+		
+		System.out.println("the area is " + rect.getArea());
+		
+		System.out.println("the perimeter is " + rect.getPerimeter());
 
 	}
 
