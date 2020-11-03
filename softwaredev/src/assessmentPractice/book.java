@@ -62,8 +62,12 @@ public class book {
 	}
 	
 	//toString
-	
-	
+	@Override
+	public String toString() {
+		return "book [name=" + name + ", author=" + author + ", ISBN=" + ISBN + ", genre=" + genre + ", status="
+				+ status + "]";
+	}
+
 	//misc metohds
 	public void Borrow() {
 		setStatus('B');
