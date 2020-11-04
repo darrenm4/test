@@ -2,6 +2,8 @@ package assessment1;
 
 import java.util.Scanner;
 
+import assessmentPractice.book;
+
 public class citizens {
 
 	public static void main(String[] args) {
@@ -9,7 +11,7 @@ public class citizens {
 		try (Scanner in = new Scanner(System.in)) {
 			citizen [] citizen1 = new citizen[3];
 			
-			for(int i=0;i<3;i++) { // the 3 in the loop means the series of Q's repeats 3 times//
+			for(int index=0;index<3;index++) { // the 3 in the loop means the series of Q's repeats 3 times//
 				System.out.println("please enter your first name " );
 				String firstName = in.next();
 				
@@ -26,7 +28,9 @@ public class citizens {
                     System.out.println("enter your maiden name");   // the program will prompt a question asking for the maiden name//
                     String maidenName = in.next();
 				
-				
+                    
+                    //citizen C =new citizen (firstName,secondName,gender,married, married, maidenName, index);
+                    	//citizen1[index] = C;
 				
 				}   
 			}
