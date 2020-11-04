@@ -2,7 +2,7 @@ package assessmentPractice;
 
 public class book {
 	
-	//Varibales 
+	//Variables 
 	private String name;
 	private String author;
 	private int ISBN;
