@@ -14,6 +14,12 @@ public class SavingsAccount {
 		setAccNo(nextAccno);		
 	}
 	
+	public SavingsAccount(double savingsBalance) {
+		++nextAccno;
+		setAccNo(nextAccno);
+		this.savingsBalance = savingsBalance;
+	}
+
 	//getters and setters
 	public int getAccNo() {
 		return accNo;
@@ -44,5 +50,10 @@ public class SavingsAccount {
 		savingsBalance+=((getSavingsBalance()*getAnnualInterestRate())/12);
 	}
 	
+	//toString
+	@Override
+	public String toString() {
+		return "SavingsAccount [accNo=" + accNo + ", savingsBalance=" + savingsBalance + "]";
+	}
 
 }//end main
