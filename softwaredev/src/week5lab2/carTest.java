@@ -6,7 +6,7 @@ public class carTest {
 		
 		Car car = new Car ("201-D-1977");
 		
-		
+		System.out.println(car.toString());
 
 	}
 

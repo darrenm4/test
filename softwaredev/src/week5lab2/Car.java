@@ -7,10 +7,11 @@ public class Car {
 	//variables
 	private String regNumber;
 	private Wheel[]wheels= new Wheel[4];
+	
 	//constructors
 	public Car(String regNumber) {
 		setRegNumber(regNumber);
-		for(int i=0;i<=wheels.length;i++) {
+		for(int i=0;i<=wheels.length-1;i++) {
 			Wheel wheel= new Wheel(i+1);
 			wheels[i]=wheel;
 		}
